@@ -1,0 +1,75 @@
+/* src/Footer.css */
+
+/* General Footer Styling */
+.footer {
+    background-color:#0D0221;
+    color: white;
+    padding:0.5rem 0; /*Add vertical padding */
+    position: relative;
+    bottom: 0; /* Keep footer at the bottom */
+    width: 100%; /* Full width */
+    margin-top: 4cm;
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto;  /*Center the footer content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    align-items: center; /* Center align items vertically */
+    padding: 0 1rem; /* Horizontal padding */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Allow sections to grow equally */
+    min-width: 150px; /* Ensure a minimum width for each section */
+    
+}
+.footer-center  {
+    text-align: center;
+    justify-content: center;
+}
+.footer-left  p {
+    justify-content: flex-start;
+    margin-left: auto;
+}
+/* Footer Links */
+.footer-links {
+    list-style-type: none; /* Remove list styles */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for links */
+    gap: 1rem; /* Space between icons */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.footer-links li {
+    display: inline; /* Inline display for list items */
+    float: left;
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Increase icon size */
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Add box shadow on hover */
+.footer-links a:hover {
+    color: #ddd; /* Change color on hover */
+    box-shadow: 0 0 10px 2px purple; /* Purple box shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-links {
+        justify-content: center; /* Center align links */
+        margin-top: 1rem; /* Add margin on top for spacing */
+    }
+}

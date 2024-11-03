@@ -1,0 +1,91 @@
+.project-card {
+    background: radial-gradient(circle at bottom right, #2E004A, #0D0221 60%);
+    background-color: #0D0221;
+    animation: twinkle 2s infinite; /* Apply twinkle animation */
+     color: white; /* Text color */
+     box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2); /* Light purple shadow */
+     border: 2px solid #6a0dad; /* Purple border */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   padding: 60px;
+  margin-top: 0.5cm;
+   justify-content: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .project-card {
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+     padding: 30px;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.8); /* Purple glow */
+    }
+  }
+  .project-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+  }
+  
+  .project-card-image img {
+   width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .Top-content p {
+    text-align: center;
+    color: white;
+  }
+  .project-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  
+  .project-card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-card-buttons {
+    margin-top: 20px;
+  display: flex;
+  text-align: center;
+  }
+  .demo-button a {
+    text-align: center;
+  }.demo-button {
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    line-height: 30px;
+  }
+  .github-button, .demo-button {
+    background-color: #6a0dad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .github-button:hover, .demo-button:hover {
+    background-color: #a64dff; /* Lighter purple on hover */
+  }
+  @media (max-width: 768px)  {
+  .project-card-buttons {
+    flex-direction: column;
+    gap:10px;
+  }
+  .github-button {
+    width: 70%;
+  }
+  }
+  

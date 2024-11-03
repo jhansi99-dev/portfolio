@@ -1,0 +1,54 @@
+
+/* Styling for the resume container */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 1200px; /* Adjust width to suit your design */
+    margin: 0 auto; /* Center the container on the page */
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-left: 3cm;
+    margin-top: 1cm;
+  }
+  
+  /* Styling for the title of the resume section */
+  .resume-title {
+    font-size: 32px;
+    color: #4b2e83; /* Use a dark, consistent color */
+    text-align: center; /* Center the title */
+    margin-top: 0.5cm;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  /* Styling for the iframe containing the PDF */
+  .resume-iframe {
+    width: 1200px; /* Full width of the container */
+    height: 70vh; /* Viewport height: Adjust height based on design needs */
+    border: none; /* Remove the border around the iframe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow around the iframe for depth */
+    border-radius: 10px; /* Match the border radius to the container */
+  }
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 10px; /* Less padding on smaller screens */
+      margin-right: 0%;
+      justify-content: center;
+      justify-items: center;
+      margin-left: 0%;
+    }
+  
+    .resume-title {
+      font-size: 28px; /* Smaller font for mobile */
+    }
+  
+    .resume-iframe {
+      height: 70vh; /* Adjust height for smaller screens */
+      margin-right:3cm ;
+    }
+  }

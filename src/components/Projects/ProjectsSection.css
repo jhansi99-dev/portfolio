@@ -1,0 +1,45 @@
+.projects-section {
+    padding: auto;
+    height: auto;
+  }
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-self: center;
+    justify-content: center;
+    gap: 2cm;
+    margin-left: 2cm;
+   margin-right: 10px;
+   padding: auto;
+  }
+  .highlight {
+    color: purple;
+  }
+  .projects-content h3 {
+text-align: center;
+color: white;
+justify-content: center;
+  }
+  .projects-content p {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    rojects-grid {
+      flex-direction: column;
+      height: auto;
+      margin-left: 0%;
+      text-align: center;
+     gap: 1px;
+     text-align: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    .projects-section{
+      text-align: center;
+      justify-content: center;
+    }
+  }

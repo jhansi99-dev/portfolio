@@ -1,0 +1,15 @@
+/* src/components/Preloader.css */
+.preloader {
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at bottom right, #2E004A, #0D0221 60%);
+   background-color: #0D0221;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it's on top */
+  }
+  
